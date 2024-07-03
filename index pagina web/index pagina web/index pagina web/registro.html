@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <p class="txt-1">Gracias por visitarnos</p>
+            <h2>Bienvenidos de nuevo</h2>
+            <hr>
+            <p class="txt-2"> Rubi Escobar Del Angel 
+            </p>
+            <p>Estudiante del colegio Ignacio</p>
+        </div>
+        <form class="form" onsubmit="handleSubmit(event)">
+            <h2>Registrate</h2>
+            <p>
+                Ingresa con tu correo y contraseña
+            </p>
+            <div class="inputs">
+                <input type="email" class="box" placeholder="Ingresa tu correo" required>
+                <input type="password" class="box" placeholder="Ingresa tu contraseña" required>
+                <a href="#">olvidaste tu contraseña</a>
+                <input type="submit" value="login" class="submit">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

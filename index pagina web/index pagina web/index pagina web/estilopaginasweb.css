@@ -1,0 +1,37 @@
+* {
+    margin: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease; /* Aplica una transición suave a todos los elementos */
+  }
+
+  body {
+    background-color: dimgray; /* Color de fondo claro para el cuerpo de la página */
+    color: #000000; /* Color de texto principal */
+    padding: 0px;
+    
+  }
+  
+  header{
+    background-color: #0239ec;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  a {
+    background-color: #366ceb; /* Fondo llamativo para el botón */
+    color: #000000; /* Texto blanco en el botón */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el fondo y la transformación */
+    
+  }
+
+  a:hover {
+    background-color: #2db8ef; /* Fondo ligeramente más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+  }

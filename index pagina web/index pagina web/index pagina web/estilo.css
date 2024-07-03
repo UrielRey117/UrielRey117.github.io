@@ -1,0 +1,165 @@
+/* Te deje comentadas las lienas CASCAS pa que le estudies */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease; /* Aplica una transición suave a todos los elementos */
+}
+
+body {
+  background-color: antiquewhite; /* Color de fondo claro para el cuerpo de la página */
+  color: #333; /* Color de texto principal */
+
+}
+
+header {
+  background-color: #333; /* Fondo oscuro para el encabezado */
+  color: #ffffff; /* Texto blanco para el encabezado */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el contenido */
+  position: relative; /* Posición relativa para ubicar el logo */
+}
+
+header .logo {
+  max-width: 100px; /* Tamaño máximo para el logo */
+  position: absolute; /* Posiciona el logo absolutamente */
+  top: 20px; /* Ubicación desde el borde superior */
+  left: 20px; /* Ubicación desde el borde izquierdo */
+}
+
+header h1 {
+  font-size: 2.5em; /* Tamaño grande para el título principal */
+  margin: 0; /* Sin margen para el título */
+}
+
+nav {
+  background-color: #555; /* Fondo gris oscuro para la barra de navegación */
+  display: flex; /* Usar flexbox para organizar los enlaces */
+  justify-content: center; /* Centrar los enlaces horizontalmente */
+  padding: 10px 0; /* Espaciado interno */
+}
+
+nav a {
+  color: #ffffff; /* Texto blanco para los enlaces */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  margin: 0 15px; /* Espaciado horizontal entre enlaces */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+  transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+nav a:hover {
+  color: #ff6347; /* Cambia a un color llamativo al pasar el cursor */
+}
+
+main {
+  padding: 20px; /* Espaciado interno para el contenido principal */
+  text-align: center; /* Centra el texto */
+}
+
+.hero {
+  background: url('imagen/cybercafe.jpg') no-repeat center center/cover; /* Imagen de fondo */
+  color: #000000; /* Texto blanco sobre la imagen */
+  padding: 100px 20px; /* Espaciado interno amplio */
+  margin-bottom: 20px; /* Espacio debajo de la sección */
+}
+
+.hero h2 {
+  font-size: 2.5em; /* Tamaño grande para el título */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.hero p {
+  font-size: 1.2em; /* Tamaño de fuente más grande para el párrafo */
+  margin-bottom: 20px; /* Espaciado debajo del párrafo */
+}
+
+.hero .btn {
+  background-color: #ff6347; /* Fondo llamativo para el botón */
+  color: #000000; /* Texto blanco en el botón */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el fondo y la transformación */
+}
+
+.hero .btn:hover {
+  background-color: #e5533d; /* Fondo ligeramente más oscuro al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+.features {
+  display: flex; /* Usar flexbox para organizar las características */
+  justify-content: space-around; /* Espaciar uniformemente los elementos */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en múltiples líneas */
+}
+
+.feature {
+  background-color: #ffffff; /* Fondo blanco para las tarjetas de características */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  margin: 10px; /* Espaciado externo */
+  padding: 20px; /* Espaciado interno */
+  flex: 1; /* Flexibilidad para crecer */
+  min-width: 250px; /* Ancho mínimo */
+  max-width: 300px; /* Ancho máximo */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centra el texto */
+}
+
+.feature h3 {
+  margin-bottom: 15px; /* Espaciado debajo del título */
+}
+
+.feature p {
+  margin-bottom: 15px; /* Espaciado debajo del párrafo */
+}
+
+.feature .btn {
+  background-color: #333; /* Fondo oscuro para el botón */
+  color: #fff; /* Texto blanco */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Sin subrayado */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el fondo y la transformación */
+}
+
+.feature .btn:hover {
+  background-color: #555; /* Fondo ligeramente más claro al pasar el cursor */
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+footer {
+  background-color: #333; /* Fondo oscuro para el pie de página */
+  color: #fff; /* Texto blanco */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
+
+footer nav a {
+  color: #fff; /* Texto blanco para los enlaces del pie de página */
+  text-decoration: none; /* Sin subrayado */
+  margin: 0 15px; /* Espaciado horizontal entre enlaces */
+  font-size: 1.1em; /* Tamaño de fuente ligeramente más grande */
+  transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+footer nav a:hover {
+  color: #ff6347; /* Cambia a un color llamativo al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+  .features {
+      flex-direction: column; /* Cambia a una disposición de columna en pantallas pequeñas */
+      align-items: center; /* Centra los elementos */
+  }
+
+  .hero {
+      padding: 50px 20px; /* Reduce el espaciado interno en pantallas pequeñas */
+  }
+
+  header .logo {
+      position: static; /* Cambia la posición a estática */
+      margin: 0 auto; /* Centra el logo horizontalmente */
+      display: block; /* Asegura que el logo sea un bloque */
+  }
+}
